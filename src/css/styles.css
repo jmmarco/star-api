@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url("./fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Star Jedi', sans-serif;
+}
+
+.container {
+  padding-top: 60px;
+}
+
+.main {
+  background-image: url('../images/swb.jpg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
