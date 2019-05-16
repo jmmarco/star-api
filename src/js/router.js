@@ -21,7 +21,7 @@ crossroads.addRoute('#/saved', function() {
 
 crossroads.addRoute('#/contact', function() {
   console.log('triggered contact route')
-  $('.main').load('/partials/_saved.html', contactController)
+  $('.main').load('/partials/_contact.html', contactController)
 })
 
 // En cada cambio del # va a verificar las rutas
