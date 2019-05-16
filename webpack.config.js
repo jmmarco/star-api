@@ -1,15 +1,19 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
   // Tell devServer where to look for files:
+  entry: __dirname + '/src/index.js',
   output: {
     path: __dirname + '/public',
     filename: 'bundle.js'
   },
+
   devServer: {
-    contentBase: __dirname + '/public',
+    contentBase:  __dirname + '/public',
   },
+
   module: {
     rules: [
       // CSS Rule
@@ -30,6 +34,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new HtmlWebpackPlugin({
       title: 'Star Wars API',
       template: './src/index.html'
