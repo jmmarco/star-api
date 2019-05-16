@@ -3,4 +3,4 @@ function contactController() {
   $('.main-title').text('cargamos la seccion contacto')
 }
 
-export default contactController()
+export default contactController
