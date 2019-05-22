@@ -35,7 +35,6 @@ body {
   opacity: 0.2;
 }
 
-
 .btn-container {
   padding-top: 40px;
 }
@@ -47,4 +46,8 @@ body {
 .characters {
   height: 600px;
   overflow: auto;
+}
+
+td:last-child {
+  width: 162px;
 }
