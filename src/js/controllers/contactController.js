@@ -1,16 +1,13 @@
 import swal from 'sweetalert'
 
 function contactController() {
-  console.log('cargamos contacto')
   $('.main-title').text('cargamos la seccion contacto')
 }
-
 
 $('.main').on('input', '#input-name', handleName)
 $('.main').on('input', '#input-email', handleEmail)
 $('.main').on('input', '#input-comments', handleName)
 $('.main').on('submit', handleSubmit)
-
 
 function handleName(evt) {
   var name = evt.target.value
@@ -46,7 +43,6 @@ function emailIsValid(email) {
 }
 
 function enableSubmit() {
-
   var numEleToCheck = $('input, textarea').length
   var validElements = $('.is-valid').length
 

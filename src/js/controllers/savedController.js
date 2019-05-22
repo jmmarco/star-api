@@ -1,35 +1,23 @@
 import { setForStorage, getFromStorage } from '../utils/storage'
 
 function savedController() {
-  console.log('cargamos guaradado')
-
-  let characters = getFromStorage('characters')
-
+  var characters = getFromStorage('characters')
   renderResults(characters)
 }
 
 $('.main').on('click', '#btn-remove', handleRemove)
 
-
 function handleRemove(e) {
   var id = $(e.target).parent().parent().find('th').text()
-
   var $btn = $(e.target)
   var $tr = $(e.target).parent().parent()
 
   $btn.removeClass('btn-success').addClass('btn-warning')
 
-
-  // console.log('results', characters[id - 1])
-  console.log('id from button and parent of parent', id)
-
-  let currentCharacters = getFromStorage('characters')
-
+  var currentCharacters = getFromStorage('characters')
   currentCharacters[ id - 1 ].saved = false
 
   setForStorage('characters', currentCharacters)
-
-  console.log(currentCharacters[ id - 1])
 
   $tr.remove()
 }
@@ -38,7 +26,6 @@ function handleRemove(e) {
 function renderResults(characters) {
   if (characters) {
     for (var i = 0; i < characters.length; i++) {
-      console.log('inside', characters[i].saved)
       if (characters[i].saved) {
         var tr = `<tr>
         <th scope="row">${i + 1}</th>
@@ -58,6 +45,5 @@ function renderResults(characters) {
     $('.container').html('<h2 class="text-center">Nothing saved yet..</h2>')
   }
 }
-
 
 export default savedController
