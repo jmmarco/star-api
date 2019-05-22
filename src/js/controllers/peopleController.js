@@ -1,6 +1,5 @@
 import getData from '../utils/api'
-import setForStorage from '../utils/saveStorage'
-import getFromStorage from '../utils/getStorage'
+import { setForStorage, getFromStorage } from '../utils/storage'
 import Character from '../utils/generateCharacter'
 
 var baseUrl = 'https://swapi.co/api/people'

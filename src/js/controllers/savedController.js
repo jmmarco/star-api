@@ -1,7 +1,4 @@
-import getFromStorage from '../utils/getStorage'
-import setForStorage from '../utils/saveStorage'
-
-// var currentStorage = getFromStorage('characters')
+import { setForStorage, getFromStorage } from '../utils/storage'
 
 function savedController() {
   console.log('cargamos guaradado')
