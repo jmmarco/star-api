@@ -41,6 +41,11 @@ function handleSave(e) {
   setForStorage('characters', currentCharacters)
 
   $btn.text('saved')
+  
+  // Use setTimeout to delay the text to appear on the button
+  setTimeout(function() {
+    $btn.text('unsave')
+  }, 600);
   $btn.attr('id', 'btn-unsave')
 }
 
