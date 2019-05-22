@@ -19,7 +19,9 @@ function handleRemove(e) {
 
   setForStorage('characters', currentCharacters)
 
-  $tr.remove()
+  $tr.fadeOut('normal', function() {
+    $(this).remove()
+  })
 }
 
 
