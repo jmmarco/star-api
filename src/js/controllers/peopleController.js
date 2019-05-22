@@ -5,23 +5,17 @@ import Character from '../utils/generateCharacter'
 var baseUrl = 'https://swapi.co/api/people'
 
 function peopleController() {
-  // console.log('Loading characters section..')
-
   if ( !getFromStorage('characters') ) {
-    console.info('firing api request')
     getData(baseUrl, parseResultsFromApi)
   } else {
-    console.info('firing localStorage request')
     renderResults(getFromStorage('characters'), 0)
   }
-
 }
 
 
 // Event listeners for the more button (with event delegation)
 $('.main').on('click', '#btn-more', function() {
   var nextUrl = localStorage.getItem('nextUrl')
-  console.log('nextUrl: ', nextUrl)
   if (nextUrl !== 'null') {
     getData(nextUrl, parseResultsFromApi)
   } else {
@@ -37,24 +31,17 @@ $('.main').on('click', '#btn-unsave', handleUnsave)
 // Handle save when 'save' button is pressed
 function handleSave(e) {
   var id = $(e.target).parent().parent().find('th').text()
-
   var $btn = $(e.target)
 
   $btn.removeClass('btn-success').addClass('btn-warning')
 
-
   var currentCharacters = getFromStorage('characters')
-
   currentCharacters[ id - 1 ].saved = true
 
   setForStorage('characters', currentCharacters)
 
-  console.log(currentCharacters[ id - 1])
-
   $btn.text('saved')
-
   $btn.attr('id', 'btn-unsave')
-
 }
 
 // Handle unsave when 'unsave' button is pressed
@@ -138,7 +125,6 @@ function renderResults(characters, index) {
   }
 
   if (localStorage.getItem('nextUrl') === 'null') {
-    console.log('aha')
     $('#btn-more').prop('disabled', true)
   }
 }
