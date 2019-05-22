@@ -11,12 +11,40 @@ body {
 
 .container {
   padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .main {
-  background-image: url('../images/swb.jpg');
-  height: 100vh;
+  background: url('../images/swb.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-title {
+  font-size: 3em;
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 7em;
+  text-align: center;
+  opacity: 0.2;
+}
+
+
+.btn-container {
+  padding-top: 40px;
+}
+
+.btn-block {
+  min-width: 100%;
+}
+
+.characters {
+  height: 600px;
+  overflow: auto;
 }
