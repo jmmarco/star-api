@@ -1,0 +1,7 @@
+{
+  "name": "Star Wars API",
+  "version": "1.0",
+  "builds": [
+    { "public/partials": "*.html", "use": "@now/static" }
+  ]
+}
