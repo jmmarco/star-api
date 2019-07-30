@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && webpack-dev-server --open",
-    "now-build": "webpack"
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack"
   },
   "keywords": [],
   "author": "",
