@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "crossroads": "^0.12.2",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "sweetalert": "^2.1.2"
