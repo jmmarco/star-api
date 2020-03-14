@@ -4,7 +4,7 @@ import peopleController from "./controllers/peopleController";
 import savedController from "./controllers/savedController";
 import contactController from "./controllers/contactController";
 
-// En cada cambio del # va a verificar las rutas
+// Listen for every hash change
 $(window).on("hashchange", locationHashChanged);
 
 function locationHashChanged() {
