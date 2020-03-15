@@ -14,6 +14,7 @@ module.exports = {
   devServer: {
     contentBase:  __dirname + '/public',
   },
+  devtool: 'inline-source-map',
 
   module: {
     rules: [
