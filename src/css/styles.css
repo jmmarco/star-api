@@ -19,20 +19,22 @@ body {
   background-size: cover;
 
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .main-title {
-  font-size: 3em;
+  font-size: 3rem;
   opacity: 0.8;
+  margin: 0;
 }
 
 .logo {
-  font-size: 7em;
+  font-size: 7rem;
   text-align: center;
-  opacity: 0.2;
+  opacity: 0.8;
+  margin: 0;
 }
 
 .btn-container {
