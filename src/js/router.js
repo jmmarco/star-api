@@ -1,5 +1,3 @@
-// import crossroads from 'crossroads'
-import homeController from "./controllers/homeController";
 import peopleController from "./controllers/peopleController";
 import savedController from "./controllers/savedController";
 import contactController from "./controllers/contactController";
@@ -10,7 +8,7 @@ $(window).on("hashchange", locationHashChanged);
 function locationHashChanged() {
   switch (location.hash) {
     case "#/":
-      $(".main").load("/partials/_home.html", homeController);
+      $(".main").load("/partials/_home.html");
       break;
     case "#/contact":
       $(".main").load("/partials/_contact.html", contactController);
