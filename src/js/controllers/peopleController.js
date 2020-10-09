@@ -2,7 +2,7 @@ import getData from '../utils/api'
 import { setForStorage, getFromStorage } from '../utils/storage'
 import Character from '../utils/generateCharacter'
 
-var baseUrl = 'https://swapi.dev/api/people'
+var baseUrl = 'https://swapi.dev/api/people/'
 
 function peopleController() {
   if ( !getFromStorage('characters') ) {
