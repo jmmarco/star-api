@@ -1,6 +1,6 @@
 # Star Wars API
 
-A vanilla JS SPA that uses [`localStorage` Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to store data from the [Star Wars API](https://swapi.co/)
+A vanilla JS SPA that uses [`localStorage` Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to store data from the [Star Wars API](https://swapi.dev/)
 
 ## Quickstart
 - clone the repository: `git clone https://github.com/jmmarco/star-api`
@@ -9,5 +9,5 @@ A vanilla JS SPA that uses [`localStorage` Web API](https://developer.mozilla.or
 
 ### Acknowledgements
 
-Thanks for [@phalt](https://github.com/phalt) for creating a simple to use [Star Wars API](https://swapi.co/).
+Thanks for [@phalt](https://github.com/phalt) for creating a simple to use [Star Wars API](https://swapi.dev/) and for [Juriy Bura](https://github.com/juriy) for keeping the project alive.
  
